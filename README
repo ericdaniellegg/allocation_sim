@@ -1,0 +1,29 @@
+==============================================================================
+Author: Eric Daniel Legg
+==============================================================================
+This project was assigned to me as a part of the Operating Systems course in which I was enrolled at my University during the Fall 2016 semester. I am primarily uploading this code to serve as an example of the C language skills I have obtained and to demonstrate my ability to program in this language. 
+
+The program simulates 3 process allocation algorithms: First Fit, Best Fit, and Worst Fit. Statistical information will be printed to the console on each of the algorithms according to the data provided if the particular algorithm failed. If the algorithm is successful, "Success" will print to the console.
+
+GCC libraries must be installed in order to compile and run this program.
+
+To clean the folder in preparation for making, type make clean on the command line while located in the folder of this project. In order to build, type make. Then, in order to run, type:
+
+./main -f filename
+
+where filename is the file of your choice containing the data to feed into the program. Please have this file located within the folder of the project files. The -f flag is NOT optional.
+
+This program accepts data formatted similarly to the following example formats: 
+
+1 1 37
+2 1 17
+3 1 23
+4 2 2
+5 2 1
+6 1 8
+
+or
+
+1 1 37 2 1 17 3 1 23 4 2 2 5 2 1 6 1 8
+
+The first number in each line represents a reference number for the memory operation. The second number in each line represents an operation, which should be either 1 ("allocate") or 2 ("deallocate"). The third number should either represent the size, in bytes, to allocate to the reference number on question (in the case that the second number be 1), or the reference number to deallocate (in the case that the second number be 2). 
